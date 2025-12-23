@@ -9,33 +9,28 @@ from google.oauth2 import service_account
 # --- 0. CLOUD SYNC FUNCTION ---
 def sync_to_google_sheets(zone, scope, ent_id, hens, cocks, water, feed, task, notes):
     try:
-        # 1. Pull the credentials from Streamlit's Secret Vault
-        creds_dict = st.secrets["gcp_service_account"]
+        # 1. Define the necessary Scopes
+        scopes = [
+            "https://www.googleapis.com/auth/spreadsheets",
+            "https://www.googleapis.com/auth/drive"
+        ]
 
-        # 2. Setup the credentials from the secret dictionary
-        credentials = service_account.Credentials.from_service_account_info(creds_dict)
+        # 2. Pull credentials and add the scopes
+        creds_dict = st.secrets["gcp_service_account"]
+        credentials = service_account.Credentials.from_service_account_info(
+            creds_dict, 
+            scopes=scopes  # <--- THIS IS THE FIX
+        )
 
         # 3. Authorize the client
         client = gspread.authorize(credentials)
 
         # 4. Open the sheet and append the data
         sheet = client.open("EthiCoAI_Master_Log").sheet1
-
-        # Prepare timestamped row for the 10-column schema
+        
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        data_row = [
-            timestamp,
-            zone,
-            scope,
-            ent_id,
-            hens,
-            cocks,
-            water,
-            feed,
-            task,
-            notes,
-        ]
-
+        data_row = [timestamp, zone, scope, ent_id, hens, cocks, water, feed, task, notes]
+        
         sheet.append_row(data_row)
         return True
     except Exception as e:
@@ -307,8 +302,9 @@ with main_col:
             try:
                 creds_dict = st.secrets["gcp_service_account"]
                 credentials = service_account.Credentials.from_service_account_info(
-                    creds_dict
-                )
+                creds_dict, 
+                scopes=["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
+)
                 client = gspread.authorize(credentials)
                 sheet = client.open("EthiCoAI_Master_Log").sheet1
                 data = sheet.get_all_records()
@@ -441,8 +437,3 @@ with inv_col:
         st.session_state.inventory["Packed Serum Bottles"] * 450
     )
     st.metric("Total Asset Value", f"₹{total_val:,}")
-# run
-
-# cd C:\Users\Shashank\Documents\python
-
-# streamlit run ethico_demo_v5.py
