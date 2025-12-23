@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ethicoai-cloud",
+  "private_key_id": "05c0514dae8431b33f135a58dc5eeab6f8c99bae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCtDtSZHx2NcHU6\nGbYkEV9Ihw0c10f91H91G8fsme6dT2LzcXYT+HqBy6DPJfl2MwgXJp39sJKgM10R\nimK7NpFNIg31HtH/igf7PnO9RFmsA0BYKhJXdVZq2Q5pAIPJ45+zlHR4WtlVIdfU\no/LTAAGT0xWrfO2kITClry28/wq/5bg4anguiDvVGEBIHYw13j040X7kFs9kQVqs\nfxT0xJQ1pACPGiVG3sYgwjEIrEgODSR7sfzZ/EazAWs442UFg/FXiaIvRGZ4QE2H\nA/bzujm6hqqDQ8Dk67higF18yP7j6u4+M4YjnAJRW+uRU5GQjnDzmTL0yykyiQp+\nDT/4x/pJAgMBAAECggEAAcTDttHOitRecIOF7+Ank0V/J2ae7iPBl1jYYbdpMqYZ\njNS74ZpG5poL7Fw4fglvNFLR2M4EklOPsUCEZbPc7RtgfWmuoaUptol65t/G/wNb\n22T9ORbGrIuCKFRJVfd1KA0WZaIfsPAV7IvoNc2OcMChjb7iDwoJEY705dhBPV6I\nHCXQOVvL1beT2v+Spq5jQ8PRik1aNOUW93Cdc+U2fjQ8pUKmteUsvbpFekPgeJdl\nKUx4RKzLCV86KjhoxLa+t82ZExpbWXC8seZZqSOARwMRtWkH2CxvjVhPT0STmsP9\nvLWh4ktEVjMomDt7BmPIqBeRhru0Ngg1QuOJmRDbgQKBgQDegM97GQYzPSAX/5dP\nmG8DGMdHaTFkW/yB9M4v85zd3AdniqCH28Bn8UpsnwZEiQLVo981DNYhE7Vt30RF\nlhgcFRF1SACJKVc4huUHunHnTaWTVX0geORX0Hh5cYthmwa+q1ltJqfxYGaNmXqw\nYPROiW4N/x3ZWB5zUMRAjG034QKBgQDHHGtCne9g6nmvP0Y1xuPyOhpuZ205Y2bd\nahqi9qZ6X5ZUytriKldwsNyTyZJX6lhA7BU+X3sTOuF+JKxZMK4WVxNMhBr8OVEZ\nIpuIPL9c+8QqgZBtiyRf1nLe1j4Y9U4ck7xaYC+Sqk1E562o9mCF8YJ9A/CIyHuk\nvk9cjvHvaQKBgEG38BBewssNidYswudakadrgSihdFo9JSbJRME7BiEtZO57LpES\nIhFRXncYvUQu56xsW3gS04gvhw3tvP+EpphczKxEWQwqLr3ecfVHZ283KumKfYvC\nyUb6pyrPk6h/no1glOg9W6tams/F/kvsRxyPUPdHW+yfL1dGCsE5+ORhAoGAJBDa\nwOtYs+Zk+kBs2ErZeUPbC8qCN1XxCQQyJPimeR4dXeiMs1DWG9x9Z+uoLXKOX9wj\nkPO8mGQe+jlsWo99ySAmp8J6HNvI+9OP9qKCSzZzdvuXDLCaex2eGw0VnHG6n2SH\nRpuLonZknqmUhDl0jG6No1V2WWBvPQ0X1P0zh5kCgYAqAh/Ph3tnGIeDxvPHpYNC\nHxa/YMUn+rSBKQYqf6psXBVyZROplEmpceosCrJ2dIKFqWpluxJ+PqXpY2JJYU2n\naT8e4it6v/yz86m514Y2ZOmx0PrzkUpajEtz7o+Yr7cQwEQidiYffjXidyujdppy\nFAqODYA1WMX8Tw5jKR1iIw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ethicoai-cloud-sync@ethicoai-cloud.iam.gserviceaccount.com",
+  "client_id": "111817358687944313453",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ethicoai-cloud-sync%40ethicoai-cloud.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
